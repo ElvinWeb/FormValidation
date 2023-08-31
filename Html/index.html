@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="icon" type="image/x-icon" href="../form-register-image.png">
+    <link rel="stylesheet" href="../StyleSheet/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" autocomplete="off">
+        <h4>Create Your Account</h4>
+        <div class="input-section">
+          <label for="first-name-input"
+            >First Name <span class="required-color">*</span>
+          </label>
+          <input
+            type="text"
+            class="input-field"
+            id="first-name-input"
+            placeholder="Enter the First Name"
+            required
+          />
+          <span id="first-name-error" class="hide required-color error-message"
+            >Invalid input</span
+          >
+          <span id="empty-first-name" class="hide required-color error-message"
+            >First name cannot be Empty</span
+          >
+        </div>
+        <div class="input-section">
+          <label for="last-name-input"
+            >Last Name <span class="required-color">*</span></label
+          >
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Enter Last Name"
+            id="last-name-input"
+            required
+          />
+          <span id="last-name-error" class="hide required-color error-message"
+            >Invalid Input</span
+          >
+          <span id="empty-last-name" class="hide required-color error-message">
+            Last Name Cannot Be Empty
+          </span>
+        </div>
+        <div class="input-section">
+          <label for="email">Email <span class="required-color">*</span></label>
+          <input
+            type="email"
+            class="input-field"
+            placeholder="Enter Email"
+            id="email"
+            required
+          />
+          <span id="email-error" class="hide required-color error-message"
+            >Invalid Email</span
+          >
+          <span id="empty-email" class="hide required-color error-message"
+            >Email Cannot Be Empty</span
+          >
+        </div>
+        <div class="input-section">
+          <label for="phone">Phone <span class="required-color">*</span></label>
+          <input
+            type="email"
+            class="input-field"
+            placeholder="Enter phone number"
+            id="phone"
+            required
+          />
+          <span id="phone-error" class="hide required-color error-message"
+            >Phone number should have 10 digits</span
+          >
+          <span id="empty-phone" class="hide required-color error-message"
+            >Phone cannot be empty</span
+          >
+        </div>
+        <div class="input-section">
+          <label for="password"
+            >Password <span class="required-color">*</span></label
+          >
+          <input
+            type="text"
+            placeholder="Enter Password"
+            id="password"
+            class="input-field"
+            required
+          />
+          <span id="password-error" class="hide required-color error-message">
+            Passwords Should Have Letter, Special symbols, Numbers And at least
+            8 characters</span
+          >
+          <span id="empty-password" class="hide required-color error-message">
+            Password Cannot Be Empty
+          </span>
+        </div>
+        <div class="input-section">
+          <label for=""
+            >Confirm Password <span class="required-color">*</span></label
+          >
+          <input
+            type="password"
+            id="verify-password"
+            class="input-field"
+            placeholder="Confirm password"
+            required
+          />
+          <span
+            id="verify-password-error"
+            class="hide required-color error-message"
+            >Should be the same As previous Password</span
+          >
+          <span
+            id="empty-verify-password"
+            class="hide required-color error-message"
+            >Password cannot be empty</span
+          >
+        </div>
+        <button id="submit-button" class="sign-btn">Signup</button>
+      </form>
+    </div>
+    <script src="../JavaScript/app.js"></script>
+  </body>
+</html>
